@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href=".\static\css\cadastro.css">
+    <title>Login - SGE</title>
+</head>
+<body>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center"> 
+    <form class="rounded bg-white p-5">
+        <h5 class="display-5 text-center"> Portal SGE</h5>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-center">Nome do aluno ou professor</label>
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="textHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-center">E-mail do aluno ou professor</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label text-center">data de nascimento</label>
+            <input type="date" class="form-control" id="exampleInputDate" aria-describedby="DateHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-center">Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      <div class="container text-center p-3">
+        <a href="{{ url_for('index')}}" class="link-underline-opacity-100 p-3">
+          Página inicial  
+        </a>
+        <a href="{{url_for('empresa')}}" class="link-underline-opacity-100 p-3">
+            Quem Somos
+        </a>
+        <a href="{{url_for('login')}}" class="link-underline-opacity-100 p-3">
+            Entrar
+        </a>
+      </div>     
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

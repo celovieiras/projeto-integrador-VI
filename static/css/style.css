@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to bottom, #002BF0, #FFFFFFFF);
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}

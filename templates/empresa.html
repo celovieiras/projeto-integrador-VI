@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Quem somos - SGE</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary-subtle">
+        <!--Logo-->
+        <div class="container">
+         <a href="{{ url_for('index')}}" class="navbar-brand">
+            <img src="#">
+          </a>    
+          <div class="collapse navbar-collapse" id="barra-nav">        
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a href="{{ url_for('index')}}" class="nav-link text-black">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ url_for('empresa')}}" class="nav-link text-black">Quem Somos</a>          
+              </li>
+            </ul>
+          </div>
+          <div class="cointainer-fluid">
+            <form class="d-flex">
+                <button class="btn btn-outline-secondary me-2" type="button">        
+                  <a href="{{ url_for('login')}}" class="nav-link text-black">Login</a>
+                </button>
+            </form>
+          </div>  
+        </div>  
+       </nav>
+    <header>
+        <section class="p-3">
+            <h1 class="text-center p-3"> Sobre a empresa</h1>
+            <h4 class="p-2">Descrição da Empresa: </h4>
+            <p class="lh-base">O Sistema de Gestão Escolar (SGE) é uma 
+                plataforma digital integrada, projetada para otimizar e automatizar a administração 
+                escolar, cobrindo áreas acadêmicas, administrativas e de comunicação interna. Com 
+                uma interface amigável e adaptada aos dispositivos móveis e desktop, o SGE facilita 
+                o acesso a informações cruciais para alunos, professores, pais e gestores, 
+                oferecendo uma visão centralizada e simplificada das atividades escolares.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <strong>Missão</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Nossa missão é transformar o setor educacional através de soluções 
+                            tecnológicas inovadoras, promovendo a excelência na gestão e na aprendizagem 
+                            escolar. Trabalhamos para desenvolver ferramentas que simplifiquem processos, 
+                            aumentem a eficiência administrativa e fortaleçam a comunicação entre alunos, 
+                            professores, pais e gestores escolares. Acreditamos que, ao otimizar o ambiente 
+                            educacional, estamos contribuindo para a formação de uma sociedade mais 
+                            informada, capacitada e preparada para os desafios do futuro.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Visão</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Nossa visão é ser uma referência global em soluções tecnológicas 
+                            para o setor educacional, reconhecida pela inovação, qualidade e impacto positivo 
+                            na transformação digital das instituições de ensino. Queremos capacitar escolas e 
+                            universidades a adotarem ferramentas que não só facilitem a gestão, mas também 
+                            transformem o processo de ensino e aprendizagem, permitindo experiências 
+                            educativas mais eficientes, colaborativas e centradas nas necessidades de cada 
+                            aluno
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <strong>Valores</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>- Inovação e Excelência: Compromisso contínuo com a inovação e 
+                            qualidade em todas as soluções.</p>
+                            <p>- Educação e Impacto Social: Dedicação ao impacto positivo no setor 
+                            educacional e na sociedade.</p>
+                            <p>- Transparência e Ética: Conduzimos nossos processos com integridade e 
+                            respeito.</p>
+                            <p>- Foco no Usuário: Atendimento personalizado e adaptado às necessidades 
+                            de cada instituição.</p>
+                            <p>- Segurança e Privacidade: Proteção rigorosa de dados, com foco em 
+                            segurança e conformidade</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+        </section>
+        <section class="p-4">
+            <h1 class="display-1 text-center p-4"> Equipe </h1>
+            <div class="container text-center">
+            <div class="row">
+            <div class="col-4">  
+                <div class="card p-3" style="width: 25rem;">
+                    <img src=".\static\images\Foto_perfil_marcelo.jpg" class="card-img-top rounded-1" alt="" height="400"  width="20">
+                    <div class="card-body">
+                    <h5 class="card-title">Marcelo Vieira da Silva</h5>
+                    <strong>Gerente, Projetista, PO</strong>
+                    <p class="card-text">Responsável pela coordenação e gestão das atividades da equipe, garantindo o cumprimento 
+                        dos prazos e a qualidade das entregas, pela interface com os usuários para entender suas necessidades e requisitos, 
+                        garantindo a satisfação e o sucesso do projeto, pelo desenvolvimento de estratégias e planos de ação para o crescimento e 
+                        desenvolvimento da empresa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-3" style="width: 25rem;">
+                    <img src="C:/Workspace_GIT/proj-integrador-VI/images/Foto_perfil_marcelo.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <h5 class="card-title">Péricles Ferreira de Britto</h5>
+                    <strong>Desenvolvedor de Sistemas</strong>
+                    <p class="card-text">Responsável pelo desenvolvimento e implementação de sistemas e 
+                        aplicativos personalizados para os usuários, pela programação, testes e manutenção dos sistemas desenvolvidos, pela
+                        utilização de tecnologias e frameworks modernos para criar soluções 
+                        eficientes e escaláveis.</p>
+                    </div>
+                </div>
+             </div>
+             <div class="col-4">
+                <div class="card p-3" style="width: 25rem;">
+                    <img src=".\static\images\Thiago.jpeg" class="card-img-top" alt="" width="20" height="400">
+                    <div class="card-body">
+                    <h5 class="card-title">Thiago Ribeiro da Silva</h5>
+                    <strong>Especialista em dados</strong>
+                    <p class="card-text">encarregado da análise e processamento de dados para identificação de padrões, tendências 
+                        e insights relevantes.</p>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+        </section>
+    </header>
+    <footer class="bg-primary-subtle">
+        <article></article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
