@@ -11,7 +11,7 @@
     <!--Logo-->
     <div class="container">
      <a href="{{ url_for('index')}}" class="navbar-brand">
-        <img src="#">
+        <!--<img src="#">-->
       </a>    
       <div class="collapse navbar-collapse" id="barra-nav">        
         <ul class="navbar-nav ml-auto">
@@ -25,11 +25,8 @@
       </div>
       <div class="cointainer-fluid">
         <form class="d-flex">
-            <button class="btn btn-outline-secondary me-2" type="button">        
-              <a href="{{ url_for('login')}}" class="nav-link text-black">Login</a>
-            </button>
-            <button class="btn btn-primary me-2" type="button">        
-              <a href="{{ url_for('cadastro')}}" class="nav-link text-white">Cadastro</a>
+              <a href="{{ url_for('login')}}" class="btn btn-outline-secondary me-2 text-black">Login</a>
+              <a href="{{ url_for('cadastro')}}" class="btn btn-primary me-2 text-white">Cadastro</a>
             </button>
         </form>
       </div>  

@@ -16,8 +16,8 @@
         <!--Logo-->
         <div class="container">
          <a href="{{ url_for('index')}}" class="navbar-brand">
-            <img src="#">
-          </a>    
+        <!--<img src="#">-->
+      </a>    
           <div class="collapse navbar-collapse" id="barra-nav">        
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ">
@@ -30,12 +30,8 @@
           </div>
           <div class="cointainer-fluid">
             <form class="d-flex">
-                <button class="btn btn-outline-secondary me-2" type="button">        
-                  <a href="{{ url_for('login')}}" class="nav-link text-black">Login</a>
-                </button>
-                <button class="btn btn-primary me-2" type="button">        
-                  <a href="{{ url_for('cadastro')}}" class="nav-link text-white">Cadastro</a>
-                </button>
+              <a href="{{ url_for('login')}}" class="btn btn-outline-secondary me-2 text-black">Login</a>
+              <a href="{{ url_for('cadastro')}}" class="btn btn-primary me-2 text-white">Cadastro</a>
             </form>
           </div>  
         </div>  
@@ -116,7 +112,7 @@
             <div class="row">
             <div class="col-4">  
                 <div class="card p-3" style="width: 25rem;">
-                    <img src=".\static\images\Foto_perfil_marcelo.jpg" class="card-img-top rounded-1" alt="" height="400"  width="20">
+                    <img src=".\static\images\Foto_perfil_marcelo.jpg" class="card-img-top rounded-1" alt="">
                     <div class="card-body">
                     <h5 class="card-title">Marcelo Vieira da Silva</h5>
                     <strong>Gerente, Projetista, PO</strong>
@@ -142,7 +138,7 @@
              </div>
              <div class="col-4">
                 <div class="card p-3" style="width: 25rem;">
-                    <img src=".\static\images\Thiago.jpeg" class="card-img-top" alt="" width="20" height="400">
+                    <img src=".\static\images\Thiago.jpeg" class="card-img-top" alt="">
                     <div class="card-body">
                     <h5 class="card-title">Thiago Ribeiro da Silva</h5>
                     <strong>Especialista em dados</strong>
