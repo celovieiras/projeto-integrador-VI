@@ -1,2 +1,4 @@
 .vscode/
+#pycache
 projeto_integrador_vi/__pycache__/
+__pycache__/
