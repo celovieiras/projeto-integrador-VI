@@ -1,0 +1,43 @@
+{% extends "empresa.html" %}
+
+{% block titulo %}
+ Home
+{% endblock %}
+
+
+
+{% block body %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary-subtle">
+    <!--Logo-->
+    <div class="container">
+     <a href="{{ url_for('index')}}" class="navbar-brand">
+        <img src="#">
+      </a>    
+      <div class="collapse navbar-collapse" id="barra-nav">        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a href="{{ url_for('index')}}" class="nav-link text-black">Página inicial</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('empresa')}}" class="nav-link text-black">Quem Somos</a>          
+          </li>
+        </ul>
+      </div>
+      <div class="cointainer-fluid">
+        <form class="d-flex">
+            <button class="btn btn-outline-secondary me-2" type="button">        
+              <a href="{{ url_for('login')}}" class="nav-link text-black">Login</a>
+            </button>
+            <button class="btn btn-primary me-2" type="button">        
+              <a href="{{ url_for('cadastro')}}" class="nav-link text-white">Cadastro</a>
+            </button>
+        </form>
+      </div>  
+    </div>  
+   </nav>
+<header>
+ <section class="p-3">
+        <h1 class="d-flex justify-content-center">SGE - Sistema de Gestão Escolar</h1>
+ </section>
+</header>
+{% endblock %}
